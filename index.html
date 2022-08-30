@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>JavaScript Calculator</title>
+        <link rel="stylesheet" href="calc.css"/>
+        <link rel="icon" href="Images/icon.jpg"> 
+        <script src="calc.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <div id="brand">
+                Calculator
+            </div>
+        </header>
+        
+        <div class = container-fluid>
+            <table>
+            <tr>
+                <td colspan="3"><input type="text" class="display" id="result"/></td>
+                <td><input type="button" class="btn-symbol" value="c" onclick="clr()"/> </td>
+            </tr>
+            <tr>
+            <td><input type="button" class="btn-val" value="1" onclick="dis('1')"/> </td>
+            <td><input type="button" class="btn-val" value="2" onclick="dis('2')"/> </td>
+            <td><input type="button" class="btn-val" value="3" onclick="dis('3')"/> </td>
+            <td><input type="button" class="btn-symbol" value="+" onclick="dis('+')"/> </td>
+            </tr>
+            <tr>
+            <td><input type="button" class="btn-val" value="4" onclick="dis('4')"/> </td>
+            <td><input type="button" class="btn-val" value="5" onclick="dis('5')"/> </td>
+            <td><input type="button" class="btn-val" value="6" onclick="dis('6')"/> </td>
+            <td><input type="button" class="btn-symbol" value="-" onclick="dis('-')"/> </td>
+            </tr>
+            <tr>
+            <td><input type="button" class="btn-val" value="7" onclick="dis('7')"/> </td>
+            <td><input type="button" class="btn-val" value="8" onclick="dis('8')"/> </td>
+            <td><input type="button" class="btn-val" value="9" onclick="dis('9')"/> </td>
+            <td><input type="button" class="btn-symbol" value="*" onclick="dis('*')"/> </td>
+            </tr>
+            <tr>
+            <td><input type="button" class="btn-val" value="." onclick="dis('.')"/> </td>
+            <td><input type="button" class="btn-val" value="0" onclick="dis('0')"/> </td>
+            <td><input type="button" class="btn-val" value="=" onclick="solve()"/> </td>
+            <td><input type="button" class="btn-symbol" value="/" onclick="dis('/')"/> </td>
+            </tr>
+            </table>
+        </div>
+        
+    </body>
+</html>
